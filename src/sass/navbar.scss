@@ -1,0 +1,14 @@
+.navbar {
+  background-color: #333333;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  font-size: 3rem;
+  font-weight: bold;
+  &__logoMarvel {
+    width: 8rem;
+    height: 3rem;
+    margin: 0.5rem 2rem 0 1rem;
+  }
+}

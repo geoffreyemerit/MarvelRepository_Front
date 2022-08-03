@@ -1,8 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import IHero from '../interfaces/IHero';
-import FiguresModal from './FiguresModal';
 
 // FRONT-END INTERFACE REQUIRED //
 interface FiguresCardProps {
@@ -46,11 +44,6 @@ const FiguresCard = ({ id }: FiguresCardProps) => {
 
           <span className="card__name">{figure.identity}</span>
         </div>
-      )}
-      {/* If modalToOpen is greater than or equal to 0 and there is an item 
-      then open FiguresModal. We pass item and setModalToOpen in props */}
-      {modalToOpen > -1 && figure && (
-        <FiguresModal figure={figure} setModalToOpen={setModalToOpen} />
       )}
     </>
   );

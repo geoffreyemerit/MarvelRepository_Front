@@ -1,10 +1,10 @@
 import React from 'react';
-import FiguresCard from '../components/FiguresCard';
+import FiguresList from '../components/FiguresList';
 
 const Home = () => {
   return (
     <div className="home">
-      <FiguresCard id={1} />
+      <FiguresList />
     </div>
   );
 };

@@ -2,9 +2,7 @@ import './App.scss';
 import React from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import FiguresCard from './components/FiguresCard';
 import Home from './pages/Home';
-import FiguresDescription from './components/FiguresModal';
 
 function App() {
   return (

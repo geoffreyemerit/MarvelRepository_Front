@@ -1,14 +1,25 @@
 .navbar {
-  background-color: #333333;
-  color: white;
+  background-color: $primary;
+  color: $secondary;
   display: flex;
   align-items: center;
   width: 100vw;
   font-size: 3rem;
   font-weight: bold;
+  @media only screen and (max-width: $breakpoint-medium) {
+    font-size: 1.5rem;
+  }
+  @media only screen and (max-width: $breakpoint-smallest) {
+    font-size: 1.2rem;
+  }
   &__logoMarvel {
     width: 8rem;
     height: 3rem;
     margin: 0.5rem 2rem 0 1rem;
+    @media only screen and (max-width: $breakpoint-smallest) {
+      width: 5rem;
+      height: 2rem;
+      margin: 0.5rem 1rem 0 1rem;
+    }
   }
 }

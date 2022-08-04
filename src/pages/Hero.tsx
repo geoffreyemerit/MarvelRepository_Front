@@ -1,11 +1,11 @@
 import React from 'react';
 
-import FiguresList from '../components/FiguresList';
+import FiguresDesc from '../components/FiguresDesc';
 
 const Home = () => {
   return (
     <div className="home">
-      <FiguresList />
+      <FiguresDesc />
     </div>
   );
 };

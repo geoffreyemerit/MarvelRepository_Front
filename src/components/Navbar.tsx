@@ -7,7 +7,7 @@ const Navbar = () => {
       <NavLink to="/">
         <img
           src="./assets/marvelLogo.png"
-          alt="logo-geoffreyemerit"
+          alt="logo-marvel"
           className="navbar__logoMarvel"
         />
       </NavLink>

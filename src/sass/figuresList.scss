@@ -10,19 +10,31 @@
       text-decoration: underline $quaternary;
       text-transform: uppercase;
       font-size: 3rem;
+      @media only screen and (max-width: $breakpoint-medium) {
+        font-size: 2rem;
+      }
+      @media only screen and (max-width: $breakpoint-smallest) {
+        font-size: 1.3rem;
+      }
     }
     &__list {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       width: 100%;
-      height: 375px;
+      height: 22rem;
       overflow: auto;
       &::-webkit-scrollbar {
         display: none;
       }
       -ms-overflow-style: none; /* IE and Edge */
       scrollbar-width: none; /* Firefox */
+      @media only screen and (max-width: $breakpoint-medium) {
+        height: 20rem;
+      }
+      @media only screen and (max-width: $breakpoint-smallest) {
+        height: 18rem;
+      }
       &--card {
         gap: 1rem;
         display: flex;
